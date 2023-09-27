@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/CSS/main1.css" />
+    <title>Blog-Contact US</title>
+    <style>
+      main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .contact {
+        max-width: 1000px;
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+        padding: 58px;
+        flex-direction: column;
+      }
+      .contact-img {
+        width: 100%;
+      }
+
+      .contact-form {
+        width: 100%;
+      }
+      .contact-form input[type="text"],
+      .contact-form input[type="email"] {
+        width: 441px;
+        margin: 8px 0;
+        padding: 8px 30px;
+      }
+      .contact-form textarea {
+        width: 100%;
+      }
+
+      .contact-form input[type="submit"] {
+        border: none;
+        padding: 8px 30px;
+        background-color: #0078d4;
+        color: white;
+        border-radius: 5px;
+      }
+
+      @media (min-width: 768px) {
+        .contact {
+          flex-direction: row;
+        }
+        .contact-img {
+          width: 50%;
+        }
+
+        .contact-form {
+          width: 50%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!--header section -->
+    <header>
+      <div class="container">
+        <nav>
+          <div class="logo"><a href="index.html">LoGO</a></div>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="Login.html">Login</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!--End-header -->
+
+    <!--Main-->
+    <div class="flex-container contact">
+      <div class="contact-img">
+        <img
+          src="https://www.droptica.com/sites/droptica.com/files/styles/blog_banner_image/public/media/image/contact-pages.png?itok=hIt85Ptt"
+          alt=""
+          width="85%"
+        />
+      </div>
+      <div class="contact-form">
+        <h1>Get in touch</h1>
+        <form action="">
+          <input type="text" placeholder="Enter Name" required />
+          <input type="email" placeholder="Enter Email" required />
+          <textarea id="" cols="30" rows="10">Enter Message</textarea>
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+    </div>
+
+    <!-- End -Main-->
+
+    <!--Footer section-->
+    <footer>
+      <p>&copy; All Rights Reserved | Designed by KAMRUJZAMAN</p>
+    </footer>
+    <!-- End-Footer section-->
+  </body>
+</html>
